@@ -1,0 +1,30 @@
+{
+  "name": "devtoolbox",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0",
+    "lint": "eslint .",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^6.0.0",
+    "@ant-design/nextjs-registry": "^1.1.0",
+    "antd": "^6.0.0",
+    "cron-parser": "^5.10.2",
+    "diff": "^8.0.0",
+    "he": "^2.0.0",
+    "next": "^16.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "sql-formatter": "^15.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^16.0.0",
+    "prettier": "^3.9.10"
+  },
+  "type": "module"
+}
