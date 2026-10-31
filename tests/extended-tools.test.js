@@ -224,7 +224,7 @@ test("Box shadow output supports inset and validates values", () => {
   );
 });
 test("All new categories and direct tool slugs are discoverable", () => {
-  assert.equal(tools.length, 23);
+  assert.equal(tools.length, 27);
   for (const c of ["API Tools", "Backend Tools", "Frontend Tools"])
     assert.equal(tools.filter((t) => t.category === c).length, 3);
   assert.equal(searchTools("dotenv")[0].slug, "env-json");

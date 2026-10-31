@@ -1908,3 +1908,47 @@ html[data-theme="light"] .removed {
     font-size: 12px;
   }
 }
+.json-changes article,
+.image-results article {
+  border: 1px solid var(--border, #7b879433);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 16px;
+  min-width: 0;
+}
+.json-changes code {
+  overflow-wrap: anywhere;
+}
+.json-changes pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 320px;
+  overflow: auto;
+}
+.image-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 16px;
+}
+.image-results strong {
+  display: block;
+  overflow-wrap: anywhere;
+  margin-bottom: 12px;
+}
+.image-file-picker {
+  padding: 24px;
+  border: 1px dashed #27cbb477;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+.image-file-picker input {
+  max-width: 100%;
+}
+.qr-preview {
+  max-width: 100%;
+  overflow: auto;
+  padding: 12px;
+}
+.qr-preview .ant-qrcode {
+  flex-shrink: 0;
+}

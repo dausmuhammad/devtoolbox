@@ -1,4 +1,5 @@
 import { extendedToolDefinitions } from "./extended-tools.js";
+import { productivityTools } from "./productivity-tools.js";
 export const tools = [
   {
     slug: "json",
@@ -115,6 +116,7 @@ export const tools = [
       "aes 128 cbc pkcs7 json text key iv kunci encryption decryption enkripsi dekripsi crypto",
   },
   ...extendedToolDefinitions,
+  ...productivityTools,
 ];
 export const categories = [...new Set(tools.map((t) => t.category))];
 export function searchTools(query) {
